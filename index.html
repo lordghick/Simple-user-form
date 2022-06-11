@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Challenge Leonardo López</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <!-- Añadí normalize para ajustar los estilos predeterminados -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Slab:wght@300&display=swap"
+        rel="stylesheet">
+    <!--CDN de google fonts para la fuente-->
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <nav class="nav_main">
+        <div class="homeDiv">
+            <a href="#">ItaHome</a>
+        </div>
+        <div class="links responsive" id="links">
+            <a href="#">Nosotros</a>
+            <a href="#">Proyectos</a>
+            <a href="#">Servicios</a>
+            <a href="#">News</a>
+            <a href="#">Contacto</a>
+            <span class="closeMenu" id="closeMenu">X</span>
+        </div>
+        <!-- <div class="links_menu" id="links">
+            <a href="#">Nosotros</a>
+            <a href="#">Proyectos</a>
+            <a href="#">Servicios</a>
+            <a href="#">News</a>
+            <a href="#">Contacto</a>
+            <span class="closeMenu" id="closeMenu">X</span>
+        </div> -->
+        <div class="nav_btn">
+            <button class="icon" id="menuBtn"><i class="fa fa-bars"></i></button>
+        </div>
+    </nav>
+    <section class="banner_div">
+        <div class="banner_text">
+            <div class="text_container">
+                <h1>Nosotros</h1>
+                <p>Te presentamos a ITA team</p>
+                <button>Contáctanos</button>
+            </div>
+        </div>
+        <div class="banner_img">
+            <img src="img/door.png" alt="">
+        </div>
+    </section>
+    <!-- Me gusta acomodar los grupos de elementos en divs mas pequeños para aprovechar
+    al máximo el display flex y aumentar la especificidad, se verá mejor en este form-->
+    <section class="form_container">
+        <form class="form_father" id="registerForm">
+            <div class="form_names">
+                <div class="input_container">
+                    <label for="firstName">First Name <span class="form_required">*</span></label>
+                    <input type="text" id="firstName" name="firstName" placeholder="First" required>
+                </div>
+                <div class="input_container">
+                    <label for="lastName">Last Name <span class="form_required">*</span></label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Last" required>
+                </div>
+            </div>
+            <div class="form_email_phone">
+                <div class="input_container">
+                    <label for="email">Email <span class="form_required">*</span></label>
+                    <input type="text" id="email" name="email" placeholder="email" required>
+                </div>
+                <div class="input_container">
+                    <label for="phone">Phone</label>
+                    <input type="text" id="phone" name="phone" placeholder="Phone">
+                </div>
+            </div>
+            <div class="form_city">
+                <div class="input_container">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city" placeholder="City">
+                </div>
+            </div>
+            <div class="form_country">
+                <div class="input_container">
+                    <label for="country">Country</label>
+                    <input type="text" id="country" name="country" placeholder="Country">
+                </div>
+                <div class="input_container">
+                    <label for="zipCode">Zip Code</label>
+                    <input type="text" id="zipCode" name="zipcode" placeholder="Zip code">
+                </div>
+            </div>
+            <div class="btn_submit">
+                <button type="submit" id="submitFormBtn">Submit</button>
+            </div>
+        </form>
+    </section>
+    <section class="footer_div">
+        <div class="footer_text">
+            <div>ITA |</div>
+            <div>
+                <div>(55)48457290</div>
+                <div>contacto.consult.ita@gmail.com</div>
+            </div>
+        </div>
+        <div class="footer_rights">© ITA MÉXICO. TODOS LOS DERECHOS RESERVADOS</div>
+    </section>
+
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/async.js"></script>
+    <script src="https://kit.fontawesome.com/12eb794d14.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

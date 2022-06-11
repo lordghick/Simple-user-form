@@ -1,0 +1,15 @@
+¡Hola!, ¿Qué tal?
+
+Al presentar esta prueba no solo quiero demostrarles mi interés en trabajar,
+si no en crecer con el equipo. Ser parte del equipo piloto de Ita es algo que
+me llena de motivación a la hora de hacer esta prueba y redactar este texto
+
+Decidí no utilizar frameworks porque aunque puedo manejarlos, pensé que el "código puro" sería mejor 
+para demostrar que entiendo de lógica de programación y que por ende, sea cual sea el proyecto en 
+el que me necesiten, si no domino una tecnología, la aprendo.
+
+En la carpeta DB se encuentra el script que crea la base de datos para ser cargado desde phpmyadmin
+
+Sin más que agregar, ¡Espero escuchar pronto de ustedes!
+
+Saludos, Leonardo López

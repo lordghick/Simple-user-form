@@ -1,0 +1,13 @@
+CREATE DATABASE challenge;
+USE challenge;
+CREATE TABLE usuarios (
+	id INT NOT NULL AUTO_INCREMENT,
+	nombre VARCHAR(50) NOT NULL,
+    apellido VARCHAR(50) NOT NULL,
+	email VARCHAR(255) NOT NULL UNIQUE,
+	phone VARCHAR(20),
+	city VARCHAR(255),
+    country VARCHAR(40),
+    zipcode INT(15),
+	PRIMARY KEY (id)
+);

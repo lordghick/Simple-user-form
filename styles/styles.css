@@ -1,0 +1,295 @@
+/* Primero establezco el font-size para utilizar el rem 
+de forma mas manejable, mejor para el responsive, estableciendo
+el rem en 10px */
+
+html{
+
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* defino variables para los colores del mockup */
+
+    --nav_colors: rgb(3,9,67);
+    --baner_bg: rgb(8,7,85);
+    --btn_color: rgb(236,53,143);
+    --submit_btn: rgb(49,119,204);
+
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+/* Estilos del nav bar */
+
+.nav_main{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--nav_colors);
+    height: 5vh;
+    width: 100vw;
+    max-width: 100vw;
+}
+
+.nav_main a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+}
+
+/* una clase para englobar la mayor cantidad de propiedades que usaré en los media queries del nav */
+.responsive{
+    position: absolute;
+    top: 0;
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.408);
+    height: auto;
+    width: 20rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    transition: right .3s ease;
+}
+
+.links > a {
+        transition: all .3s ease;
+        text-decoration: none;
+        color: #FFF;
+        margin: 0.1rem 0.7rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        font-size: 1.5rem;
+}
+
+.links > a:hover{
+    transform: scale(1.1);
+}
+
+.closeMenu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+    z-index: 4;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.icon{
+    transition: all .3s ease;
+}
+
+.nav_main button {
+
+    color: #FFF;
+    background: none;
+    border: none;
+    font-size: 2rem;
+}
+
+.homeDiv{
+    margin-left: 1rem;
+}
+
+.homeDiv > a{
+    font-family: 'Anton', sans-serif;
+    font-size: 2rem;
+}
+
+/* banner */
+
+.banner_div{
+    position: relative;
+    height: 30vh;
+    width: 100vw;
+    background-color: var(--baner_bg);
+    padding-bottom: 2rem;
+}
+
+.banner_div button{
+    background: none;
+    background-color: var(--btn_color);
+    border: none;
+    font-size: 2rem;
+    height: 3rem;
+    width: 15rem;
+    border-radius: 2rem;
+    color: white;
+}
+
+.banner_div > div {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.banner_img img{
+    z-index: 0;
+    height: 100%;
+    width: 50%;
+    float: right;
+}
+
+.banner_text{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-size: 2.3rem;
+}
+
+.text_container{
+    margin-left: 5rem;
+}
+
+/* formulario */
+
+.form_father{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100vw;
+}
+
+.form_father > div{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    height: 10rem;
+}
+
+.form_father span{
+    color: red;
+}
+
+.input_container{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    padding-left: 1rem;
+}
+
+.input_container > label{
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 1rem;
+}
+
+.input_container > input{
+    height: 3rem;
+    width: 95%;
+    border: 0.15rem solid rgb(86, 86, 86);
+    border-radius: 0.3rem;
+}
+
+.form_city{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.form_city > .input_container{
+    width: 100%;
+}
+
+.form_city input{
+    width: 96.5%;
+}
+
+.btn_submit button{
+    margin-top: 2rem;
+    color: #FFF;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    background-color: var(--submit_btn);
+    width: 100%;
+    height: 4rem;
+    border-radius: 2px;
+}
+
+/* footer */
+
+.footer_div{
+    margin-top: 2rem;
+    height: 12vh;
+    width: 100vw;
+    background-color: var(--nav_colors);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.3rem;
+}
+
+.footer_text{
+    display: flex;
+}
+
+/* Media queries */
+
+/* por las buenas prácticas, y basado en la resolución del mockup, 
+utilicé la metodología "mobile first" donde se hace la página orientada a 
+móviles y luego se adapta a escritorios */
+@media screen and (max-width: 820px){
+    /* .responsive{
+        display: none;
+    } */
+}
+@media screen and (min-width: 821px){
+    .responsive{
+        display: initial;
+        position: initial;
+        background: none;
+        height: auto;
+        width: auto;
+    }
+
+    .links > a {
+        display: initial;
+    }
+    .icon{
+        display: none;
+    }
+    .nav_main{
+        justify-content: center;
+    }
+    .homeDiv{
+        position: absolute;
+        left: 1rem;
+        top: 0.6rem;
+    }
+
+    .banner_img img{
+        width: 40%;
+        margin-right: 10rem;
+    }
+}
+
+/* un ajuste para que la imagen de la puerta se vea mejor en resoluciones mas pequeñas */
+@media screen and (max-width: 520px){
+    .banner_img img{
+        width: 70%;
+    }
+}
+
+
+
+
