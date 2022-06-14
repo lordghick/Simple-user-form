@@ -8,6 +8,10 @@ Decidí no utilizar frameworks porque aunque puedo manejarlos, pensé que el "c�
 para demostrar que entiendo de lógica de programación y que por ende, sea cual sea el proyecto en 
 el que me necesiten, si no domino una tecnología, la aprendo.
 
+Lastimosamente, el tiempo no me alcanzó para decorar detalles, como lo es el mensaje de espera 
+(que tuve que dejarlo como un alert), pero tengo las capacidades de hacer esto y espero que
+la funcionalidad general del proyecto lo demuestre
+
 En la carpeta DB se encuentra el script que crea la base de datos para ser cargado desde phpmyadmin
 
 Sin más que agregar, ¡Espero escuchar pronto de ustedes!

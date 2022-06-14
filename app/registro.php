@@ -59,3 +59,5 @@ if(isset($_POST['email'])){
 }else{
     print "El proceso de registro no recibió información. Inténtelo de nuevo";
 }
+
+Conexion::cerrarConexion();

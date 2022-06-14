@@ -16,6 +16,16 @@
 </head>
 
 <body>
+    <div class="modal_users" id="modalUsers">
+        <table id="tableList">
+        </table>
+        <div class="btn_submit">
+            <button type="button" onclick="switchModal()">Cerrar</button>
+        </div>
+    </div>
+    <button class="user_counter" id="userBtn">
+        Usuarios registrados: <span id="counter">0</span>
+    </button>
     <nav class="nav_main">
         <div class="homeDiv">
             <a href="#">ItaHome</a>
@@ -28,14 +38,6 @@
             <a href="#">Contacto</a>
             <span class="closeMenu" id="closeMenu">X</span>
         </div>
-        <!-- <div class="links_menu" id="links">
-            <a href="#">Nosotros</a>
-            <a href="#">Proyectos</a>
-            <a href="#">Servicios</a>
-            <a href="#">News</a>
-            <a href="#">Contacto</a>
-            <span class="closeMenu" id="closeMenu">X</span>
-        </div> -->
         <div class="nav_btn">
             <button class="icon" id="menuBtn"><i class="fa fa-bars"></i></button>
         </div>
